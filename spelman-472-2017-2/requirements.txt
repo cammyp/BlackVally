@@ -1,0 +1,40 @@
+
+Purpose:
+The purpose of our application is to provide our users with various meals they can make given an ingredient 
+
+
+Scope:
+This application can be used for any person who is trying to find new meals they can make from leftover ingredients. 
+
+
+Requirements:
+What data do you need?
+For this application we need data about various recipes. This data will be pulled from the Epicurious database from the website Kaggle. 
+
+
+How would you store it?
+Our data will be stored in the Google Cloud Platform so every member in our group can have access to it. 
+
+
+What would the UI look like?
+        User is prompted with a text box for an ingredient.
+        //If we use a textbox what about spellings and two words instead of one
+The top 3 recipes that use the ingredient are randomly selected and displayed on the screen 
+        User can click on recipe to view it in detail. 
+        User can reject and request other recipes with the same ingredient. 
+        User can re-enter an ingredient in the prompt to change to a different ingredient.
+
+
+How do you test it
+        1 - test to see if the ingredient the user requested is in fact in the recipe
+        2 -  test to see if new recipes are generated on click of generate new recipes button. 
+
+
+What do the function defs look like?
+One function will take in the ingredient from the user and filter through our database and return all recipes that contain their ingredient argument. We are thinking of storing this information in a dictionary with the ingredient being the key and the value being an array of all of the recipes.
+
+
+Another function will take in our dictionary key, and either one or two index values from the dictionary values array. We will use these three arguments to first, find the correct dictionary using the key. Then check to see which recipes have already been given to our users and return the next three or return empty if we are at the end of our array.
+ 
+
+

@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BlackVally</title>
+
+ <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+ <script src="https://www.amcharts.com/lib/3/pie.js"></script>
+ <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    
+<link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="hello.js"></script>
+
+<!--  Load the Google APIs Javascript client library -->
+<!--  Then call the init function, which is defined in hello.js -->
+<script src="https://apis.google.com/js/client.js?onload=init"></script>
+<link rel="shortcut icon" type="image/png" href="logo.jpg"/>
+
+</head>
+
+
+
+<body>
+
+<p class="buffer"></p>
+<p class="buffer"></p>
+
+ <form class="hide" action="index.html" method="post">
+ 
+ <p class="buffer"></p>
+ <H1 class="hide">BlackVally</H1>
+ <p class="buffer"></p>
+ 		
+ <fieldset class="hide"> 
+    <label for="job" class="hide">Choose a Company:</label>
+        <select id="company_id" class="hide">
+          <optgroup>
+            <option value="HPE">HPE</option>
+            <option value="Lyft">Lyft</option>
+            <option value="Uber">Uber</option>
+            <option value="View">View</option>
+            <option value="eBay">eBay</option>
+            <option value="Adobe">Adobe</option>
+            <option value="Apple">Apple</option>
+            <option value="Cisco">Cisco</option>
+            <option value="Intel">Intel</option>
+            <option value="Airbnb">Airbnb</option>
+            <option value="Google">Google</option>
+            <option value="Intuit">Intuit</option>
+            <option value="Nvidia">Nvidia</option>
+            <option value="Square">Square</option>
+            <option value="23andMe">23andMe</option>
+            <option value="HP Inc.">HP Inc.</option>
+            <option value="Twitter">Twitter</option>
+            <option value="Facebook">Facebook</option>
+            <option value="LinkedIn">LinkedIn</option>
+            <option value="Pinterest">Pinterest</option>
+            <option value="MobileIron">MobileIron</option>
+            <option value="Salesforce">Salesforce</option>
+          </optgroup>
+        </select>   
+ </fieldset>   
+        
+     <p class="buffer"></p>
+     
+     <p class="hide"><input class="next" id="input_greet_by_name" type="button" value="Loding..."  onclick="will_be_set_after_endpoints_apis_loaded"></p> 
+     
+     <p class="buffer"></p>
+
+ </form>
+ 
+<p class="buffer"></p>
+<p class="buffer"></p>
+
+<!--  <P class="hide"> What is your race? <input value ="" id="race_id"> What company do you want to work for? <input value ="" id="company_id"></P> -->
+
+<p id="title"></p>
+
+<p class="buffer"></p>
+<p class="buffer"></p>
+
+<div class="warpper">
+<fieldset class="fS insideFS show" style="display:none;"> 
+	<label for="race" class="insideFS show label" style="display:none;">Race:</label>
+    <p class="buffer"></p>
+    <select id="race_id" class="insideFS show" style="display:none;">
+          <optgroup>
+            <option  class="insideFS show" value="Black" style="display:none;">Black</option>
+            <option  class="insideFS show" value="White" style="display:none;">White</option>
+            <option   class="insideFS show" value="Asian" style="display:none;">Asian</option>
+            <option  class="insideFS show" value="Latino" style="display:none;">Latino</option>
+            <option  class="insideFS show" value="Indian" style="display:none;">Indian</option>
+            <option  class="insideFS show" value="Islander" style="display:none;">Islander</option>
+            <option  class="insideFS show" value="Mixed race" style="display:none;">Mixed race</option>
+          </optgroup>
+     </select> 
+</fieldset> 
+</div>
+        
+<p class="buffer"></p>
+<p class="buffer"></p>
+      
+<p class="show specialBtn" style="display:none;"><input style="display:none;" id="input_update_race" class="next show" type="button" value="Update Stats"  onclick="will_be_set_after_endpoints_apis_loaded"></p> 
+
+<div class="chartDiv">
+<div class="hidden chart" id="chartdiv" ></div>
+</div>
+
+<p class="buffer"></p>
+<p class="buffer"></p>
+<p class="buffer"></p>
+<p class="buffer"></p>
+<p class="buffer"></p>
+<p class="buffer"></p>
+
+<div class="resDiv">
+<p class="res" id="results"></p>
+</div>
+
+</body>
+
+
+</html>

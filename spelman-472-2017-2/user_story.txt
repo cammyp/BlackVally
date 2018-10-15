@@ -1,0 +1,4 @@
+User Story
+
+A user named Jane just finished making a three course meal, she then realizes that she has all these random ingredients leftover from cooking. She does not want to throw them away, but she also does not know how to create meals from each of the ingredients. As a user Jane will be able to utilize our application to generate recipes based on her input ingredients. The objective of the application is to be able to take in one ingredient from the user and output a maximum of three recipes containing that particular ingredient. This application will aid users in accessing and determining recipes in a quick and efficient way. 
+
